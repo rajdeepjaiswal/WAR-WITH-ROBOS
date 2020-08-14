@@ -1,4 +1,4 @@
-class   Bullet{
+class Enemy{
     constructor(x, y, width, height) {
         var options = {
            
@@ -19,7 +19,7 @@ class   Bullet{
         var angle = this.body.angle;
         var pos= this.body.position;
         push();
-        pos.y = pos.y-1;
+        pos.y = pos.y+1;
         translate(pos.x, pos.y);
         rotate(angle);
         rectMode(CENTER);
