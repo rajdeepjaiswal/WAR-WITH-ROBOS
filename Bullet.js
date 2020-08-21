@@ -12,10 +12,10 @@ class   Bullet{
         this.width = width;
         this.height = height;
         Matter.World.add(world, this.body);
-        
+        this.image = loadImage ("bullet.jpg");
       }
       display(){
-        console.log(this.body.speed);
+        console.log(this.body);
         var angle = this.body.angle;
         var pos= this.body.position;
         push();
@@ -23,7 +23,7 @@ class   Bullet{
         translate(pos.x, pos.y);
         rotate(angle);
         rectMode(CENTER);
-        rect(0,0,this.width, this.height);
+        image(this.image,0,0,this.width, this.height);
         pop();
       
     }

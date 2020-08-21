@@ -15,7 +15,7 @@ class   Player{
         
       }
       display(){
-        console.log(this.body.speed);
+        //console.log(this.body.speed);
         this.body.position.x = mouseX;
         if(this.body.speed <3){
         var angle = this.body.angle;
