@@ -22,7 +22,6 @@ function draw(){
 for(var j = 0; j< EnemyArray.length; j ++) {
   if(EnemyArray[j] != undefined) {
   EnemyArray[j].display()
-  EnemyArray[j].score()
 }}
 for(var i = 0; i<bulletArray.length; i ++) {
   bulletArray [i].display()
