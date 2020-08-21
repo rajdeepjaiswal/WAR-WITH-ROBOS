@@ -26,9 +26,17 @@ for(var j = 0; j< EnemyArray.length; j ++) {
 for(var i = 0; i<bulletArray.length; i ++) {
   bulletArray [i].display()
 }
+if(keyDown("SPACE"))
+{
+  bullet1= new Bullets(player1.body.position.x,player1.body.position.y,50,50);
+    bulletArray.push(bullet1);
 }
-function keyPressed(){
-  if(keyCode==32){
-    bulletArray.push(new Bullet(player1.body.position.x,player1.body.position.y,50,50));
-  }
+
 }
+//function keyPressed(){
+  //if(keyCode==32){
+    //console.log("hi");
+    //bullet1= new Bullets(player1.body.position.x,player1.body.position.y,50,50);
+    //bulletArray.push(bullet1);
+  //}
+//}
